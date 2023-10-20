@@ -1,0 +1,179 @@
+*
+{
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+}
+
+body
+{
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: hsl(216, 12%, 8%);
+    padding-top: 30px;
+}
+
+main, .thank-you-section
+{
+    background-color: hsl(213, 19%, 18%);
+    width: 420px;
+    height: 420px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#submit-button
+{
+    background-color: hsl(25, 97%, 53%);
+}
+
+h1, #submit-button, h2
+{
+    color: hsl(0, 0%, 100%);
+}
+
+h3
+{
+    color: hsl(25, 97%, 53%);
+}
+
+p, .option-buttons
+{
+    color: hsl(217, 12%, 63%);
+}
+
+p
+{
+    line-height: 1.5;
+}
+
+.option-buttons, .icon-star-background, .thank-you-section__dinamic-message-background, #close-thank-you-section
+{
+    background-color: hsl(216, 12%, 54%, 0.15);
+}
+
+#close-thank-you-section:hover
+{
+    background-color: hsl(213, 19%, 18%);
+}
+
+.icon-star-background
+{
+    display: grid;
+    place-items: center;
+}
+
+.option-buttons, .icon-star-background, #close-thank-you-section
+{
+    border-radius: 200px;
+    width: 50px;
+    height: 50px;
+    border: none;
+}
+
+.option-buttons-container
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.option-buttons:hover
+{
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(25, 97%, 53%);
+}
+
+.option-buttons:focus
+{
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(217, 12%, 63%);
+}
+
+#submit-button
+{
+    width: 100%;
+    height: 45px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+#submit-button:hover
+{
+    color: hsl(25, 97%, 53%);
+    background-color: hsl(0, 0%, 100%);
+}
+
+button
+{
+    cursor: pointer;
+}
+
+main, #submit-button, .thank-you-section__dinamic-message-background, .thank-you-section
+{
+    border-radius: 25px;
+    border: none;
+}
+
+.thank-you-section
+{
+    display: none;
+    position: absolute;
+    top: 65px;
+    align-items: center;
+}
+
+h2
+{
+    font-size: 2em;
+}
+
+.thank-you-section__dinamic-message-background
+{
+    display: grid;
+    place-items: center;
+    height: 40px;
+    width: 205px;
+}
+
+.thank-you-section p, h2 
+{
+    text-align: center;
+}
+
+[alt="Thank you illust"]
+{
+    height: 125px;
+}
+
+#close-thank-you-section
+{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+}
+
+@media only screen and (max-width: 420px)
+{
+    main, .thank-you-section
+    {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 305px)
+{
+    .option-buttons
+    {
+        width: 15%;
+        margin: 3px 0;
+    }
+
+    #submit-button
+    {
+        height: 15%;
+    }
+}
